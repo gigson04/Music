@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You ❤️ | Spotify Love Player</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- INTRO -->
+<div id="intro">
+    <h1>❤️ Made With Love ❤️</h1>
+    <p>Just For You...</p>
+</div>
+
+<!-- Background -->
+<div class="background">
+    <div id="particles"></div>
+</div>
+
+<!-- MAIN -->
+<div class="container">
+
+    <header>
+
+        <h3>Songs For You Loveee!!! <3 </h3>
+
+        <h1>Every Song Reminds Me Of You ❤️</h1>
+
+    </header>
+
+    <main class="player-layout">
+
+        <!-- PLAYER -->
+        <section class="player">
+
+            <div class="vinyl-area">
+
+                <div id="vinyl" class="vinyl">
+
+                    <div class="vinyl-label">
+
+                        <img id="cover" src="images/cover1.jpg">
+
+                    </div>
+
+                </div>
+
+                <div class="cover-card">
+
+                    <img id="coverImage" src="images/cover1.jpg">
+
+                    <button id="favorite">♡</button>
+
+                </div>
+
+            </div>
+
+            <div class="song-info">
+
+                <h2 id="title">
+                    Until I Found You
+                </h2>
+
+                <p id="artist">
+                    Stephen Sanchez
+                </p>
+
+            </div>
+
+            <div class="progress-container">
+
+                <span id="currentTime">
+                    0:00
+                </span>
+
+                <div class="progress-bar" id="progressBar">
+
+                    <div class="progress" id="progress"></div>
+
+                    <div class="thumb" id="thumb"></div>
+
+                </div>
+
+                <span id="duration">
+                    0:00
+                </span>
+
+            </div>
+
+            <div class="controls">
+
+                <button id="shuffle">
+                    🔀
+                </button>
+
+                <button id="previous">
+                    ⏮
+                </button>
+
+                <button id="play">
+                    ▶
+                </button>
+
+                <button id="next">
+                    ⏭
+                </button>
+
+                <button id="repeat">
+                    🔁
+                </button>
+
+            </div>
+
+            <div class="volume">
+
+                🔉
+
+                <input
+                    type="range"
+                    id="volume"
+                    min="0"
+                    max="100"
+                    value="70"
+                >
+
+            </div>
+
+            <button id="loveButton">
+
+                ❤️ For You ❤️
+
+            </button>
+
+        </section>
+
+        <!-- PLAYLIST -->
+        <aside class="playlist">
+
+            <h2>
+                Playlist
+            </h2>
+
+            <ul id="playlist">
+
+            </ul>
+
+        </aside>
+
+    </main>
+
+    <!-- LOVE NOTES -->
+
+    <section class="notes">
+
+        <h2>
+
+            Love Notes ❤️
+
+        </h2>
+
+        <p id="loveNote">
+
+            Every song reminds me of you.
+
+        </p>
+
+    </section>
+
+</div>
+
+<!-- SURPRISE -->
+
+<div id="surprise">
+
+    <div class="letter">
+
+        <h1>
+
+            ❤️
+
+        </h1>
+
+        <h2>
+
+            Just So You Know...
+
+        </h2>
+
+        <p>
+
+            Thank you for every smile.
+
+            Every laugh.
+
+            Every memory.
+
+            Every song reminds me of you.
+
+            No matter where life takes us,
+
+            you'll always have my heart.
+
+            I love you forever. ❤️
+
+        </p>
+
+        <button id="closeLetter">
+
+            Close
+
+        </button>
+
+    </div>
+
+</div>
+
+<!-- SECRET GALLERY -->
+
+<div id="galleryModal">
+
+    <div class="galleryBox">
+
+        <h2>
+
+            ❤️ Our Memories ❤️
+
+        </h2>
+
+        <div class="gallery">
+
+            <img src="images/gallery/1.jpg">
+            <img src="images/gallery/2.jpg">
+            <img src="images/gallery/3.jpg">
+            <img src="images/gallery/4.jpg">
+            <img src="images/gallery/5.jpg">
+            <img src="images/gallery/6.jpg">
+
+        </div>
+
+        <button id="closeGallery">
+
+            Close
+
+        </button>
+
+    </div>
+
+</div>
+
+<!-- AUDIO -->
+
+<audio id="audio"></audio>
+
+<script src="script.js"></script>
+
+</body>
+</html>
